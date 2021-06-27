@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hello there</title>
+  <link rel="stylesheet" href="styling.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <!-- <script src=" https://use.fontawesome.com/6e089b23dd.js"></script> -->
+  <script src="https://kit.fontawesome.com/4a1e676a86.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="container">
+      <ul>
+        <li><a href="/ux-ui.html" class="active">UX/UI</a></li>
+        <li><a href="/writing.html">Writing</a></li>
+        <li><a href="index.html">About me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container" style="margin-top: 3rem;"> 
+    <div class="project-list">
+       <h1>UX/UI</h1>
+      <ul>
+        <li><a id="dashboard" href="javascript:void()" onclick="show('project-dashboard')"><i class="fab fa-sketch"></i>Dashboard</a></li>
+        <li><a id="wizard" href="javascript:void()" onclick="show('project-wizard')"><i class="fab fa-sketch"></i>Wizard</a></li>
+        <li><a id="designsystem" href="javascript:void()" onclick="show('project-designsystem')"><i class="fab fa-sketch"></i>Design system</a></li>
+        <li><a id="housewarming" href="javascript:void()" onclick="show('project-housewarming')"><i class="fab fa-sketch"></i>Housewarming (side project)</a></li>
+      </ul>
+    </div>
+    
+    <div class="project-details" id="project-dashboard">
+      <h2>Dashboard</h2>
+      <p class="intro">Consectetur aliqua irure excepteur voluptate eiusmod nostrud id sint ut esse do tempor. Aute eiusmod magna laborum est tempor. Excepteur occaecat minim mollit qui anim cupidatat commodo labore adipisicing. Sit proident tempor dolor occaecat non excepteur occaecat ipsum et ut quis reprehenderit velit.</p>
+      <div style="position: relative">
+<img src="img/homepage.png">
+      <img src="img/homepage_mobile.png" style="
+     position: absolute;
+    right: 0;
+    bottom: -4rem;">
+    </div>
+    <img src="img/Homepage-opdrachten_mobile.jpg">
+      
+
+    </div>
+
+     <div class="project-details" id="project-wizard" style="display: none;">
+      <h2>Wizard</h2>
+      <p class="intro">Consectetur aliqua irure excepteur voluptate eiusmod nostrud id sint ut esse do tempor. Aute eiusmod magna laborum est tempor. Excepteur occaecat minim mollit qui anim cupidatat commodo labore adipisicing. Sit proident tempor dolor occaecat non excepteur occaecat ipsum et ut quis reprehenderit velit.</p>
+     
+
+    </div>
+
+        <div class="project-details" id="project-designsystem" style="display: none;">
+      <h2>Design system</h2>
+      <p class="intro">Consectetur aliqua irure excepteur voluptate eiusmod nostrud id sint ut esse do tempor. Aute eiusmod magna laborum est tempor. Excepteur occaecat minim mollit qui anim cupidatat commodo labore adipisicing. Sit proident tempor dolor occaecat non excepteur occaecat ipsum et ut quis reprehenderit velit.</p>
+    </div>
+
+        <div class="project-details" id="project-housewarming" style="display: none;">
+      <h2>Housewarming (side project)</h2>
+      <p class="intro">Consectetur aliqua irure excepteur voluptate eiusmod nostrud id sint ut esse do tempor. Aute eiusmod magna laborum est tempor. Excepteur occaecat minim mollit qui anim cupidatat commodo labore adipisicing. Sit proident tempor dolor occaecat non excepteur occaecat ipsum et ut quis reprehenderit velit.</p>
+    
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="team__tab">MEET THE TEAM</div>
+      <div class="team">
+        <span class="team__member">
+          <img src="profilepic.jpg" />
+          <span class="team__member-title">UX designer</span>
+        </span>
+        <span class="team__member">
+          <img src="dev.png" />
+          <span class="team__member-title">UI developer</span>
+        </span>
+        <span class="team__member">
+          <img src="writer.jpg" />
+          <span class="team__member-title">Creative writer</span>
+        </span>
+        <div class="contact">
+          <div class="contact-title">Contact</div>
+          <div style="margin-bottom: .5rem;"><i class="fa fa-envelope mr1"></i>charlie.poiters@gmail.com</div>
+          <div><i class="fa fa-phone mr1"></i>+32 496 29 64 53 (please don't call me, I'm a millenial)</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function show(project) {
+      $('#inklestudio').addClass('active');
+      document.querySelectorAll('[id^=project-]').forEach(element => {
+        $('#'+element.id).hide();
+
+        var linkid = element.id.slice(8);
+        console.log('all links', linkid);
+        $('#'+linkid).removeClass('active');
+
+      });
+
+      var activelink = project.slice(8);
+      console.log('active link', activelink);
+      $('#'+activelink).addClass('active');
+
+      
+
+
+
+       project = "#"+project;
+       $(project).show();
+    }
+  </script>
+</body>
+
+</html>
