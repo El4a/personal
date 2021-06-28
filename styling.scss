@@ -25,6 +25,21 @@ p {
   line-height: 1.75rem;
 }
 
+.button {
+  padding: .5rem 1rem;
+  background-color: #fff;
+  color: #efaea3;
+  font-weight: 700;
+  border: 1px solid #efaea3;
+  //border-color: darken(rgb(250, 226, 222), $amount: 25%);
+  border-radius: 5px;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #f3ccc612;
+  }
+}
+
 .container {
   width: 1300px;
   max-width: 1300px;
