@@ -37,6 +37,7 @@ p {
   border: 1px solid #efaea3;
   border-radius: 5px;
   text-decoration: none;
+  display: inline-block;
 }
 
 .button:hover {
@@ -44,8 +45,8 @@ p {
 }
 
 .container {
-  width: 1300px;
   max-width: 1300px;
+  width: 100%;
   margin-left: auto;
   margin-bottom: auto;
   margin-right: auto;
