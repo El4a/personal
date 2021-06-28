@@ -20,6 +20,7 @@
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/mhayes-twentytwenty/1.0.0/css/twentytwenty.min.css" type="text/css"
     media="screen" />
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 </head>
 
 <body>
@@ -149,13 +150,18 @@
     $(document).ready(function () {
       // Cocoen.create(document.querySelector('.cocoen'));
       //Cocoen.parse(document.body);  
-          $('#compare').twentytwenty();
-    $('#compare2').twentytwenty();
+    $('#compare').twentytwenty();
+     $('#compare2').twentytwenty();
     })
+
+    //  $('#compare').imagesLoaded( function() {
+    //    console.log('loaded');
+    //         $('#compare').twentytwenty();
+    //     });
 
 
     function show(project) {
-      $('#inklestudio').addClass('active');
+
       document.querySelectorAll('[id^=project-]').forEach(element => {
         $('#' + element.id).hide();
 
@@ -171,6 +177,7 @@
 
       project = "#" + project;
       $(project).show();
+      $(window).trigger('resize');
     }
   </script>
 </body>
