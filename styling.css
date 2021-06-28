@@ -82,8 +82,8 @@ h2 {
 
 .project-list {
   width: 30%;
-  padding-right: 2rem;
   float: left;
+  margin-top: 2rem;
 }
 
 .project-list ul {
@@ -116,7 +116,7 @@ footer {
   background-color: #E3E5E7;
   margin-top: 3rem;
   bottom: 0;
-  width: 100vw;
+  width: 100%;
 }
 
 footer .team {
@@ -183,5 +183,10 @@ footer .contact-title {
 
 .ml1 {
   margin-left: 1rem;
+}
+
+.boxshadow {
+  -webkit-box-shadow: 10px 10px 14px -8px #615b61;
+          box-shadow: 10px 10px 14px -8px #615b61;
 }
 /*# sourceMappingURL=styling.css.map */

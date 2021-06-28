@@ -87,8 +87,8 @@ h2 {
 
 .project-list {
   width: 30%;
-  padding-right: 2rem;
   float: left;
+  margin-top: 2rem;
 
   ul {
     list-style:none;
@@ -109,6 +109,10 @@ h2 {
   }
 }
 
+.fa-sketch {
+  //color: rgb(242, 175, 61);
+}
+
 .project-details {
   width: 70%;
   margin-left: auto;
@@ -116,13 +120,12 @@ h2 {
   border-left: 1px solid #E3E5E7;
   min-height: 50vh;
 
-  
 }
 footer {
    background-color: #E3E5E7;
    margin-top: 3rem;
    bottom: 0;
-   width: 100vw;
+   width: 100%;
 
    .team {
      display: flex;
@@ -177,4 +180,8 @@ footer {
 
 .ml1 {
   margin-left: 1rem;
+}
+
+.boxshadow {
+  box-shadow: 10px 10px 14px -8px rgba(97,91,97,1);
 }
