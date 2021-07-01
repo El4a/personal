@@ -8,7 +8,6 @@ li {
   padding: 0;
   vertical-align: baseline;
   border: 0;
-  color: #6A707B;
 }
 
 body {
@@ -21,6 +20,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  color: #6A707B;
 }
 
 p {
@@ -44,7 +44,7 @@ p {
   background-color: #f3ccc612;
 }
 
-.container {
+.container, main {
   max-width: 1300px;
   width: 100%;
   margin-left: auto;
@@ -54,8 +54,35 @@ p {
   position: relative;
 }
 
+main {
+  margin-top: 75px;
+  padding-top: 3rem;
+}
+
+main a {
+  color: #7daf92;
+}
+
+main a:hover {
+  color: #426b53;
+}
+
+main a.active {
+  font-weight: 700;
+  color: #2E4638;
+  text-decoration: none;
+}
+
 header {
-  background-color: #E3E5E7;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  border-bottom: 10px solid #7daf92;
+  background: linear-gradient(135deg, #152d1fcc 0%, #4A7C5Fcc 50%, #152D1Fcc 100%);
+}
+
+header nav {
+  text-align: right;
 }
 
 header ul {
@@ -70,13 +97,16 @@ header li {
 }
 
 header li a {
+  color: #F2BDB4;
   text-decoration: none;
   padding: 1rem;
   display: block;
 }
 
 header li a:hover, header li a:focus, header li a.active {
-  background-color: #fae2de;
+  background-color: #2E4638;
+  -webkit-text-decoration: #F2BDB4;
+          text-decoration: #F2BDB4;
 }
 
 h2 {
@@ -107,12 +137,6 @@ h2 {
 
 .project-list ul li {
   margin-bottom: .5rem;
-}
-
-.project-list ul a.active {
-  font-weight: 700;
-  color: #efaea3;
-  text-decoration: none;
 }
 
 .project-list ul i {
