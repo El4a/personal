@@ -96,7 +96,6 @@ nav {
      font-weight: bold;
      font-size: 1.5rem;
      display: inline-block;
-     margin-right: .5rem;
 
      &:first-child {
 
@@ -228,4 +227,35 @@ footer {
 
 .boxshadow {
   box-shadow: 10px 10px 14px -8px rgba(97,91,97,1);
+}
+
+
+.c-project {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 5rem;
+  }
+
+  &____description {
+    margin: 0 4rem;
+  }
+
+  img {
+    width: 40%;
+
+    &.-left {
+      margin-right: 5%;
+    }
+
+    &.-right {
+      margin-left: 5%;
+    }
+  }
+
+  .intro,p  {
+    width: 100%;
+  }
+
 }
