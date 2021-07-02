@@ -59,15 +59,15 @@ main {
   padding-top: 3rem;
 }
 
-main a {
+main a:not(.button) {
   color: #7daf92;
 }
 
-main a:hover {
+main a:not(.button):hover {
   color: #426b53;
 }
 
-main a.active {
+main a:not(.button).active {
   font-weight: 700;
   color: #2E4638;
   text-decoration: none;
@@ -77,12 +77,28 @@ header {
   position: fixed;
   width: 100%;
   z-index: 1;
-  border-bottom: 10px solid #7daf92;
-  background: linear-gradient(135deg, #152d1fcc 0%, #4A7C5Fcc 50%, #152D1Fcc 100%);
+  font-weight: 200;
+  background: linear-gradient(135deg, #233a2d 0%, #233a2d9c 50%, #152D1Fcc 80%);
 }
 
 header nav {
-  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .c-logo {
+  width: 200px;
+}
+
+header img {
+  height: 100%;
+  width: 100%;
+  border-left: 1px solid #F2BDB4;
+  border-right: 1px solid #F2BDB4;
 }
 
 header ul {
@@ -90,7 +106,6 @@ header ul {
 }
 
 header li {
-  font-weight: bold;
   font-size: 1.5rem;
   display: inline-block;
 }
@@ -102,10 +117,13 @@ header li a {
   display: block;
 }
 
-header li a:hover, header li a:focus, header li a.active {
+header li a:hover:not(.active) {
+  text-decoration: underline;
+}
+
+header li a:focus, header li a.active {
   background-color: #2E4638;
-  -webkit-text-decoration: #F2BDB4;
-          text-decoration: #F2BDB4;
+  text-decoration: underline;
 }
 
 h2 {
@@ -238,10 +256,10 @@ footer .contact-title {
 }
 
 .c-project:not(:last-child) {
-  margin-bottom: 5rem;
+  margin-bottom: 7rem;
 }
 
-.c-project____description {
+.c-project__description {
   margin: 0 4rem;
 }
 
