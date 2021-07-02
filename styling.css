@@ -23,6 +23,10 @@ body {
   color: #6A707B;
 }
 
+h1 {
+  color: #233a2d;
+}
+
 p {
   font-size: 1.1rem;
   width: 66%;
@@ -69,7 +73,7 @@ main a:not(.button):hover {
 
 main a:not(.button).active {
   font-weight: 700;
-  color: #2E4638;
+  color: #233a2d;
   text-decoration: none;
 }
 
@@ -81,7 +85,7 @@ header {
   background: linear-gradient(135deg, #233a2d 0%, #233a2d9c 50%, #152D1Fcc 80%);
 }
 
-header nav {
+header .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,7 +126,7 @@ header li a:hover:not(.active) {
 }
 
 header li a:focus, header li a.active {
-  background-color: #2E4638;
+  background-color: #233a2d;
   text-decoration: underline;
 }
 
