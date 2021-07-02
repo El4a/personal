@@ -36,16 +36,17 @@ p {
 .button {
   padding: .5rem 1rem;
   background-color: #fff;
-  color: #efaea3;
+  color: #7daf92;
   font-weight: 700;
-  border: 1px solid #efaea3;
+  border: 1px solid #7daf92;
   border-radius: 5px;
   text-decoration: none;
   display: inline-block;
 }
 
 .button:hover {
-  background-color: #f3ccc612;
+  background-color: #7daf9225;
+  color: #233a2d;
 }
 
 .container, main {
@@ -68,7 +69,7 @@ main a:not(.button) {
 }
 
 main a:not(.button):hover {
-  color: #426b53;
+  color: #233a2d;
 }
 
 main a:not(.button).active {
@@ -257,9 +258,6 @@ footer .contact-title {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.c-project:not(:last-child) {
   margin-bottom: 7rem;
 }
 

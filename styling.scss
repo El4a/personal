@@ -2,7 +2,7 @@
 //variables
 //$color-primary: #2E4638;
 $color-primary: #233a2d;
-$color-secundary: #45665378;
+$color-secundary: #7daf9225;
 $color-accent: #F2BDB4;
 $color-accent-green: #7daf92;
 
@@ -41,16 +41,18 @@ p {
 .button {
   padding: .5rem 1rem;
   background-color: #fff;
-  color: #efaea3;
+  color: $color-accent-green;
   font-weight: 700;
-  border: 1px solid #efaea3;
+  border: 1px solid $color-accent-green;
   //border-color: darken(rgb(250, 226, 222), $amount: 25%);
   border-radius: 5px;
   text-decoration: none;
   display: inline-block;
 
   &:hover {
-    background-color: #f3ccc612;
+    background-color: $color-secundary;
+    color: $color-primary;
+    ;
   }
 }
 
@@ -72,7 +74,7 @@ main {
         color: $color-accent-green;
 
         &:hover {
-          color: darken($color-accent-green, 25%);
+          color: $color-primary;
         }
         &.active {
         font-weight: 700;
@@ -254,9 +256,9 @@ footer {
   display: flex;
   align-items: center;
 
-  &:not(:last-child) {
+
     margin-bottom: 7rem;
-  }
+
 
   &__description {
     margin: 0 4rem;
