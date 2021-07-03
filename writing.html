@@ -8,7 +8,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-  <!-- <script src=" https://use.fontawesome.com/6e089b23dd.js"></script> -->
   <script src="https://kit.fontawesome.com/4a1e676a86.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -30,10 +29,10 @@
   <main>
 
     <div class="c-project">
-      <img class="-left" alt="illustration of the story" src="img/a-different-time.png" />
+      <img class="c-project__ux-images -left" alt="illustration of the story" src="img/a-different-time.png" />
       <div class="c-project__description" id="project-inklestudio">
         <h1>A different time</h1>
-        <p class="intro">An interactive short story — made with Inklewriter, or rather <i>being</i> made — about a young
+        <p class="-blurp-text">An interactive short story — made with Inklewriter, or rather <i>being</i> made — about a young
           woman's troublesome teenage years and young adulthood, set against the background of a rapid changing world in
           the 1940's and 50's. The story centers around choices and the road(s) not taken. I want to use this narrative
           to explore and highlight my own privileges (and those of my peers) in contrast to the social and economical
@@ -45,7 +44,7 @@
     <div class="c-project" id="project-sana">
       <div class="c-project__description">
         <h1>A highland heist</h1>
-        <p class="intro">
+        <p class="-blurp-text">
           A branching choose-your-own-adventure style story following a French detective investigating a puzzeling crime
           in the Scottisch highlands. It is published on the "Sana stories" platform; a reading app for romantic and
           thrilling original stories, where you get to choose between multiple storylines and different endings.</p>
@@ -53,7 +52,7 @@
           Unfortunately, this is only accessible through their (free) app available for Android & Apple. Once installed,
           you can easily find the story via <a href="https://sanastoriesdeeplinks.page.link/aovy">this link</a>.</p>
       </div>
-      <img class="-right" alt="illustration of the story" src="img/sana.png" />
+      <img class="c-project__ux-images -right" alt="illustration of the story" src="img/sana.png" />
     </div>
   </main>
 
@@ -81,31 +80,6 @@
       </div>
     </div>
   </footer>
-
-  <script>
-    function show(project) {
-      $('#inklestudio').addClass('active');
-      document.querySelectorAll('[id^=project-]').forEach(element => {
-        $('#' + element.id).hide();
-
-        var linkid = element.id.slice(8);
-        console.log('all links', linkid);
-        $('#' + linkid).removeClass('active');
-
-      });
-
-      var activelink = project.slice(8);
-      console.log('active link', activelink);
-      $('#' + activelink).addClass('active');
-
-
-
-
-
-      project = "#" + project;
-      $(project).show();
-    }
-  </script>
 </body>
 
 </html>

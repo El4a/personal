@@ -27,12 +27,6 @@ h1 {
   color: #233a2d;
 }
 
-p {
-  font-size: 1.1rem;
-  width: 66%;
-  line-height: 1.75rem;
-}
-
 .button {
   padding: .5rem 1rem;
   background-color: #fff;
@@ -147,30 +141,11 @@ h2 {
   width: 66%;
 }
 
-.project-list {
-  width: 30%;
-  float: left;
-  margin-top: 2rem;
-}
-
-.project-list ul {
-  list-style: none;
-}
-
-.project-list ul li {
-  margin-bottom: .5rem;
-}
-
-.project-list ul i {
-  margin-right: .5rem;
-}
-
-.project-details {
-  width: 70%;
-  margin-left: auto;
-  padding-left: 4rem;
-  border-left: 1px solid #E3E5E7;
-  min-height: 50vh;
+.-blurp-text {
+  line-height: 2rem;
+  color: #9097A0;
+  font-size: 18px;
+  line-height: 1.75rem;
 }
 
 footer {
@@ -265,19 +240,57 @@ footer .contact-title {
   margin: 0 4rem;
 }
 
-.c-project img {
-  width: 40%;
+.c-project__ux-description {
+  width: 50%;
 }
 
-.c-project img.-left {
+.c-project__ux-description.-left {
   margin-right: 5%;
 }
 
-.c-project img.-right {
+.c-project__ux-description.-right {
   margin-left: 5%;
+}
+
+.c-project__ux-description-wrapper {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.c-project__ux-images {
+  width: 40%;
+}
+
+.c-project__ux-images img {
+  max-width: 100%;
+}
+
+.c-project__ui-images {
+  width: 40%;
+}
+
+.c-project .image {
+  width: 40%;
+}
+
+.c-project .image.-left {
+  margin-right: 5%;
+}
+
+.c-project .image.-right {
+  margin-left: 5%;
+}
+
+.c-project .max-w-100 {
+  max-width: 100%;
 }
 
 .c-project .intro, .c-project p {
   width: 100%;
+}
+
+.slick-arrow:before {
+  color: #365D90 !important;
 }
 /*# sourceMappingURL=styling.css.map */

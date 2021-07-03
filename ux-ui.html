@@ -2,32 +2,34 @@
 <html>
 
 <head>
-    <title>Charlie's web(site)</title>
+  <title>Charlie's web(site)</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="styling.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-  <!-- <script src=" https://use.fontawesome.com/6e089b23dd.js"></script> -->
   <script src="https://kit.fontawesome.com/4a1e676a86.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <!-- <script src="https://unpkg.com/cocoen/dist/cocoen.js"></script> -->
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mhayes-twentytwenty/1.0.0/js/jquery.event.move.min.js"
     type="text/javascript"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mhayes-twentytwenty/1.0.0/js/jquery.twentytwenty.min.js"
     type="text/javascript"></script>
   <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/mhayes-twentytwenty/1.0.0/css/twentytwenty.min.css" type="text/css"
-    media="screen" />
-    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    href="https://cdnjs.cloudflare.com/ajax/libs/mhayes-twentytwenty/1.0.0/css/twentytwenty.min.css" type="text/css" media="screen" />
+
+<script src="https://unpkg.com/cocoen/dist/cocoen.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 </head>
 
 <body>
   <header class="header">
     <nav class="container">
-      <a href="home.html" class="c-logo"><img alt="site logo" src="img/logo.png"/></a>
+      <a href="home.html" class="c-logo"><img alt="site logo" src="img/logo.png" /></a>
       <ul>
         <li><a href="/writing.html">Writing</a></li>
         <li><a href="/ux-ui.html" class="active">UX/UI</a></li>
@@ -37,88 +39,76 @@
   </header>
 
   <main>
-    <div class="project-list">
-      <ul>
-        <li><a class="active" id="homepage" href="javascript:void()" onclick="show('project-homepage')"><i
-              class="fab fa-sketch"></i>Personalized homepage</a></li>
-        <li><a id="dashboard" href="javascript:void()" onclick="show('project-dashboard')"><i
-              class="fab fa-sketch"></i>Follow-up dashboard</a></li>
-        <li><a id="designsystem" href="javascript:void()" onclick="show('project-designsystem')"><i
-              class="fab fa-sketch"></i>Design system</a></li>
-        <li><a id="contentpages" href="javascript:void()" onclick="show('project-contentpages')"><i
-              class="fab fa-sketch"></i>Content pages redesign</a></li>
-        <li><a id="housewarming" href="javascript:void()" onclick="show('project-housewarming')"><i
-              class="fab fa-sketch"></i>Housewarming (side project)</a></li>
-      </ul>
-    </div>
-
-    <div class="project-details" id="project-homepage">
-
-      <h1>Personalized homepage</h1>
-
-      <p class="intro">A unifying project to accommodate our users (Belgian citizens) to find an overview of all their
-        career-related services in one go. Required to be usable by anyone everywhere, meaning a strong emphasis on
-        being super-userfriendly, accessible, and responsive. </p>
-      <div style="position: relative; margin-top: 3rem">
-        <img src="img/homepage.png" class="boxshadow">
-        <img src="img/homepage_mobile.png" style="
-     position: absolute;
-    right: 0;
-    bottom: -4rem;" class="boxshadow">
+    <div class="c-project" id="project-homepage">
+      <div class="c-project__ux-description -left">
+        <div class="c-project__ux-description-wrapper">
+          <h1>Personalized homepage</h1>
+          <p class="-blurp-text">A unifying project to accommodate our users in finding an overview of all their
+            career-related services in one go. Required to be usable by anyone everywhere, meaning a strong emphasis on
+            being super-userfriendly, accessible, and responsive. </p>
+          </div>
       </div>
-      <img src="img/homepage-opdrachten_mobile.jpg" style="margin-top: 6rem; width: 100%;" class="boxshadow">
-
-
-    </div>
-
-    <div class="project-details" id="project-dashboard" style="display: none;">
-      <h1>Follow-up dashboard</h1>
-      <p class="intro">A challenging, classicaly overloaded, legacy application that was due for an overhaul. The main
-        improvement was reducing the length and complexity of the list, changing it into a combination of priority-based
-        "new"-alerts and custom presets to filter.</p>
-
-      <div id="compare" class="twentytwenty-container">
-        <img src="img/dashboard_before.png" alt="" />
-        <img src="img/dashboard_after.png" alt="" />
+      <div class="c-project__ui-images my-slider">
+        <img src="img/homepage/homepage-main.png">
+        <img src="img/homepage/opdrachten.png">
       </div>
-
     </div>
 
-    <div class="project-details" id="project-designsystem" style="display: none;">
-      <h1>Design system</h1>
-      <p class="intro">For the past six years, I have maintained, extended, and rebuild our current in-house design
-        system. This consists of HTML & Sass files with BEM formatting, compiled by a NPM-Gulp combo into a
-        markdown/handlebars documentation site. Here we document our branding and guidelines as well as standalone
-        components and full code-ready html mockups.</p>
+    <div class="c-project" id="project-dashboard">
+      <div class="c-project__ui-images">
+        <div class="cocoen" data-color="#233a2d" data-start="80%">
+          <img src="img/opvolgingsdashboard_after.png" alt=""/>
+          <img src="img/opvolgingsdashboard_before.png" alt="" />
+        </div>
+      </div>
+       <div class="c-project__ux-description -right">
+        <div class="c-project__ux-description-wrapper">
+          <h1>Tasklist dashboard</h1>
+          <p class="-blurp-text">A challenging, classicaly overloaded, legacy application that was (over)due for an overhaul. The main improvement was reducing the length and complexity of the list, changing it into a combination of priority-based "new"-alerts and custom presets to filter – effectively handing the users a trackable to-do list.</p>
+        </div>
+      </div>
+    </div>
 
-      <div style="position:relative">
+    <div class="c-project" id="project-designsystem">
+      <div class="c-project__ux-description -left">
+        <div class="c-project__ux-description-wrapper">
+          <h1>Design system</h1>
+          <p class="-blurp-text">For the past six years, I have maintained, extended, and rebuild our current in-house design system. This consists of HTML & Sass files with BEM formatting, compiled by a NPM-Gulp combo into a markdown/handlebars documentation site. Here we document our branding and guidelines as well as present standalone components and full code-ready html mockups.</p>
+        </div>
+      </div>
+      <div class="c-project__ui-images" style="position: relative;">
         <img class="boxshadow" src="img/designsystem/icons.png" style="max-width:66%" alt="" />
-        <img class="" src="img/designsystem/colors.png"
-          style="max-width:66%; position: absolute; right:0; transform:translateY(25%);  box-shadow: 0px 0px 14px 2px rgba(97,91,97,1);"
+        <img class="" src="img/designsystem/colors.png" class="boxshadow"
+          style="max-width:66%; position: absolute; right:0; transform:translateY(25%);"
           alt="" />
         <img class="boxshadow" src="img/designsystem/tables.png" style="max-width:66%; margin-top: 5rem;" alt="" />
       </div>
     </div>
 
-    <div class="project-details" id="project-contentpages" style="display: none;">
+    <!-- <div class="project-details" id="project-contentpages" style="display: none;">
       <h1>Content pages rework</h1>
-      <p class="intro">A collection of legacy pages that were in need of a redesign within the context of the brand styleguide.</p>
+      <p class="intro">A collection of legacy pages that were in need of a redesign within the context of the brand
+        styleguide.</p>
       <div id="compare2" class="twentytwenty-container">
-        <img src="img/contentpages/ondernemen_before.png" alt="" />
-        <img src="img/contentpages/ondernemen_after.png" alt="" />
+<img src="img/contentpages/ondernemen_before.png" alt="" />
+<img src="img/contentpages/ondernemen_after.png" alt="" />
       </div>
 
-    </div>
+    </div> -->
 
-    <div class="project-details" id="project-housewarming" style="display: none;">
-      <h1>Housewarming (side project)</h1>
-      <p class="intro">A superfluous side-project I did for fun and to avoid answering the same questions a gazillion
-        times, while providing a streamlined way for everyone to get their drinks. It's thrown together with Vue.js and
-        a very shoddy JSON backend.
-        <br><br>
-        Most likely no longer fully functional (I won't show up with a drink), but still online to take a look.</p>
-      <a class="button" href="https://housewarming.poiters.be" target=”_blank”>Live demo</a> <span>(Made for
-        mobile)</span>
+    <div class="c-project">
+      <div class="c-project__ui-images">
+           <img class="max-w-100" src="img/housewarming.png"/>
+        </div>
+       <div class="c-project__ux-description -right">
+        <div class="c-project__ux-description-wrapper">
+          <h1>Housewarming (side project)</h1>
+            <p class="-blurp-text">A superfluous side-project I did for fun and to avoid answering the same questions a gazillion times, while providing a streamlined way for everyone to get their drinks. It's thrown together with Vue.js and a very shoddy JSON backend.</p>
+            <p class=""> Most likely no longer fully functional (I won't show up with a drink), but still online to take a look.</p>
+            <a class="button" href="https://housewarming.poiters.be" target=”_blank”>Live demo</a> <span>(Made for mobile)</span>
+          </div>  
+        </div>  
+         
     </div>
   </main>
 
@@ -148,39 +138,19 @@
   </footer>
 
   <script>
-
     $(document).ready(function () {
-      // Cocoen.create(document.querySelector('.cocoen'));
-      //Cocoen.parse(document.body);  
-    $('#compare').twentytwenty();
-     $('#compare2').twentytwenty();
-    })
+      $('#compare').twentytwenty();
+      $('#compare2').twentytwenty();
 
-    //  $('#compare').imagesLoaded( function() {
-    //    console.log('loaded');
-    //         $('#compare').twentytwenty();
-    //     });
+      Cocoen.create(document.querySelector('.cocoen'));
 
 
-    function show(project) {
-
-      document.querySelectorAll('[id^=project-]').forEach(element => {
-        $('#' + element.id).hide();
-
-        var linkid = element.id.slice(8);
-        console.log('all links', linkid);
-        $('#' + linkid).removeClass('active');
-
+      $('.my-slider').slick({
+        dots: true,
+        autoplay: true
       });
 
-      var activelink = project.slice(8);
-      console.log('active link', activelink);
-      $('#' + activelink).addClass('active');
-
-      project = "#" + project;
-      $(project).show();
-      $(window).trigger('resize');
-    }
+    })
   </script>
 </body>
 
