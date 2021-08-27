@@ -39,6 +39,19 @@
   </header>
 
   <main>
+    <div class="c-project" id="project-wg-dashboard">
+      <div class="c-project__ui-images my-slider-manual">
+        <img src="img/wg-dashboard/dashboard-after.png">
+        <img src="img/wg-dashboard/dashboard-before.png">
+      </div>
+       <div class="c-project__ux-description -right">
+        <div class="c-project__ux-description-wrapper">
+          <h1>Webapp dashboard</h1>
+          <p class="-blurp-text">An ancient landingspage in serious need of an update. Transforming an incredibly static page – merely containing entry points to various other applications – to an insightful dashboard, bringing all the relevant data directly to the user. And of course, considering more than 50% of users visit via mobile, offering a reponsive experience this time around.</p>
+          </div>
+      </div>
+    </div>
+
     <div class="c-project" id="project-homepage">
       <div class="c-project__ux-description -left">
         <div class="c-project__ux-description-wrapper">
@@ -69,13 +82,22 @@
       </div>
     </div>
 
-    <div class="c-project" id="project-designsystem">
+    <div class="c-project" id="project-content">
       <div class="c-project__ux-description -left">
         <div class="c-project__ux-description-wrapper">
-          <h1>Design system</h1>
-          <p class="-blurp-text">For the past six years, I have maintained, extended, and rebuild our current in-house design system. This consists of HTML & Sass files with BEM formatting, compiled by a NPM-Gulp combo into a markdown/handlebars documentation site. Here we document our branding and guidelines as well as present standalone components and full code-ready html mockups.</p>
-        </div>
+          <h1>Contentpages</h1>
+          <p class="-blurp-text">Apart from interactive webapplications, there have also been a multitude of static contentpages to (re)design, adhering to the branding styleguide and coherent with the client's overal digital presence. Again, usability is key which means larger fonts and spacing, easily distinguishable links, and in-your-face CTA's.</p>
+          </div>
       </div>
+      <div class="c-project__ui-images my-slider">
+        <img src="img/contentpages/content-1.svg">
+        <img src="img/contentpages/content-2.png">
+        <img src="img/contentpages/content-3.svg">
+      </div>
+    </div>
+
+    <div class="c-project" id="project-designsystem">
+  
       <div class="c-project__ui-images" style="position: relative;">
         <img class="boxshadow" src="img/designsystem/icons.png" style="max-width:66%" alt="" />
         <img class="" src="img/designsystem/colors.png" class="boxshadow"
@@ -83,24 +105,18 @@
           alt="" />
         <img class="boxshadow" src="img/designsystem/tables.png" style="max-width:66%; margin-top: 5rem;" alt="" />
       </div>
+
+       <div class="c-project__ux-description -right">
+        <div class="c-project__ux-description-wrapper">
+          <h1>Design system</h1>
+          <p class="-blurp-text">For the past six years, I have maintained, extended, and rebuild our current in-house design system. This consists of HTML & Sass files with BEM formatting, compiled by a NPM-Gulp combo into a markdown/handlebars documentation site. Here we document our branding and guidelines as well as present standalone components and full code-ready html mockups.</p>
+        </div>
+      </div>
     </div>
 
-    <!-- <div class="project-details" id="project-contentpages" style="display: none;">
-      <h1>Content pages rework</h1>
-      <p class="intro">A collection of legacy pages that were in need of a redesign within the context of the brand
-        styleguide.</p>
-      <div id="compare2" class="twentytwenty-container">
-<img src="img/contentpages/ondernemen_before.png" alt="" />
-<img src="img/contentpages/ondernemen_after.png" alt="" />
-      </div>
-
-    </div> -->
 
     <div class="c-project">
-      <div class="c-project__ui-images">
-           <img class="max-w-100" src="img/housewarming.png"/>
-        </div>
-       <div class="c-project__ux-description -right">
+       <div class="c-project__ux-description -left">
         <div class="c-project__ux-description-wrapper">
           <h1>Housewarming (side project)</h1>
             <p class="-blurp-text">A superfluous side-project I did for fun and to avoid answering the same questions a gazillion times, while providing a streamlined way for everyone to get their drinks. It's thrown together with Vue.js and a very shoddy JSON backend.</p>
@@ -108,6 +124,10 @@
             <a class="button" href="https://housewarming.poiters.be" target=”_blank”>Live demo</a> <span>(Made for mobile)</span>
           </div>  
         </div>  
+      <div class="c-project__ui-images">
+           <img class="max-w-100" src="img/housewarming.png"/>
+        </div>
+      
          
     </div>
   </main>
@@ -148,6 +168,10 @@
       $('.my-slider').slick({
         dots: true,
         autoplay: true
+      });
+
+      $('.my-slider-manual').slick({
+        dots: true
       });
 
     })
