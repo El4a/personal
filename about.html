@@ -2,92 +2,234 @@
 <html>
 
 <head>
-    <title>Charlie's web(site)</title>
+  <title>Charlie's web(site)</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="styling.css">
+  <!-- <link rel="stylesheet" href="animatedLetters.css"> -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400&display=swap" rel="stylesheet">
+
   <!-- <script src=" https://use.fontawesome.com/6e089b23dd.js"></script> -->
   <script src="https://kit.fontawesome.com/4a1e676a86.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!-- <script src="animatedLetters.js"></script> -->
 </head>
 
 <body>
   <header class="header">
     <nav class="container">
-      <a href="home.html" class="c-logo"><img alt="site logo" src="img/logo.png"/></a>
+      <a href="charlie.html" class="c-logo"><img alt="site logo" src="img/logo-full.svg" /></a>
       <ul>
-        <li><a href="/writing.html">Writing</a></li>
-        <li><a href="/ux-ui.html">UX/UI</a></li>
-        <li><a href="#" class="active">About me</a></li>
+        <li><a href="/writing.html">writing</a></li>
+        <li><a href="/ux-ui.html">design</a></li>
+        <li><a href="/about.html" class="active">about me</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <h1 style="display: inline-block">Hello there... </h1> <i class="title-tooltip fa fa-question-circle"
-      title="If you don't autofill this with '...general Kenobi', we probably communicate on different levels."></i>
+
+  <!-- <style>
+
+ #svg2 {
+  stroke-dasharray: 448;
+  stroke-dashoffset: 448;
+  animation-duration: .3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  transition: opacity 0.5s linear; 
+}
+
+#btn:hover #svg2 {
+  opacity: 1;
+    animation-name: draw;
+}
+
+
+@keyframes draw {
+   from {
+    stroke-dashoffset: 448;
+  } 
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+  </style>
+  <div style="margin-top:100px"></div>
+  <div style="position: relative;" id="btn">
+    <span style="    position: absolute;
+    top: 64%;
+    left: 68px;
+">button test</span>
+<svg fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="svg2" d="M75.0009 70.9997C322.5 47 154.499 164 47.5042 146.549C42.5 143 -62.2527 128.308 82.1849 88.9368" stroke="black" stroke-width="4"/>
+</svg> 
+
+</div> -->
+
+
+  <main class="container">
+    <a href="https://drive.google.com/file/d/1wO9UQg4-zC5PUCvWECuWREH-LCcCAwsD/view?usp=sharing" class="download-btn">
+      <i class="fas fa-download"></i>
+      download my cv</a>
+    <h1>All about Charlie<div class="about-me__meta">An authentic person with only mild embellishments.</div>
+    </h1>
+
+    <!-- <section class="cd-intro">
+    <h1 class="cd-headline push">
+      <span class="cd-words-wrapper">
+        <b class="is-visible">sailing</b>
+        <b>reading</b>
+        <b>games</b>
+        <b>puzzles</b>
+        <b>history</b>
+        <b>philosophy</b>
+        <b>travel</b>
+      </span>
+    </h1>
+    </section> -->
 
     <p class="intro">
-      First things first: please refrain from judging me based on this website. I threw it together on a sunny,
-      I-should-be-outside-afternoon, after it had been on my to-do list for the past half decade. So, now that I have
-      finially carved out my little treasuretrove of internet presence, let's get to it.
+      Like everyone, I sport some flaws that I wil put somewhere in a tiny footnote, however, I want to highlight my
+      capacity for being enthusiastic, driven, and motivated when things interest me. I strive for perfection, and
+      especially when things just don't feel right, I tend to keep tweaking until they do. Since I'm a nomad, I can move
+      around easily and make sure I'm always in a timezone that matches the rest of the team.
+      <div class="intro about-me__bottom-line">
+        I'm fun, flexible, and I care about my work.
+        <img src="img/bottom-line.svg" />
+      </div>
     </p>
-    <p class="intro">
-      Like everyone else and their aunties, I have recently discovered the digital nomad life. I'm currently enjoying
-      this privilege travelling around Europe, working as a UX/UI/Interaction expert/consultant (pick whichever title
-      you find most appealing) for a Belgium based company.
-    </p>
 
-    <section style="width:66%">
-    <h2>What I <span style="text-decoration: line-through;">want</span> would like</h2>
-    <p>
-      Being a remote worker is the best thing since slice bread. Honestly, even better because sliced bread really isn’t
-      all that it’s hyped up to be. That means for me, to be a happy and fulfilled human being, this is something I will
-      not (easily) relinquish. </p>
-    <p>If I could combine this with some more exciting projects than I’ve had so far, that would be wonderful. Ideally
-      (but not exclusively limited to) something game-related; specifically genres like visual storytelling, interactive
-      choose-your-own-adventure games, or narrative-driven RPG’s.
+    <section class="cv">
+      <h2 class="cv__title subtitle">My skills</h2>
+      <div class="cv__section">
+        <h3 class="cv__title-meta">The software & tools I’m familiar with</h3>
+        <div class="cv__skills">
+          <div class='cv__skill'>
+            <h4 class="cv__skill-title">UX/UI</h4>
+            <ul>
+              <li>Sketch</li>
+              <li>Figma</li>
+              <li>Marvel</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>SASS</li>
+            </ul>
+          </div>
+          <div class='cv__skill'>
+            <h4 class="cv__skill-title">Development</h4>
+            <ul>
+              <li>Javascript</li>
+              <li>jQuery</li>
+              <li>Angular</li>
+              <li>Vue</li>
+              <li>Git</li>
+              <li>NPM</li>
+            </ul>
+          </div>
+          <div class='cv__skill'>
+            <h4 class="cv__skill-title">Writing</h4>
+            <ul>
+              <li>Twine</li>
+              <li>Inklewriter</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-    </p>
-    <h2>What I can do</h2>
-    <p>Design-wise, I have 6 years of experience designing enterprise applications, dealing with heaps of stakeholders & analysts (some better, some worse), code reviewing teammates, processing user feedback and searching for compromises. I have excellent HTML/CSS skills (again: not demo'd anywhere in this code), a good understanding of javascript, Sketch/Figma knowledge, experience (albeit a tad outdated) with Angular and Vue, and the well-developed ability to google everything else. 
-      <br><br>
-      Writing-wise, I have less experience but (even more) passion to make up for it. I have been writing for a while, but only now (slowing) making tangible samples. I think my natural writing voice leans towards a brisk, easily digestible style, that can be both whimsical and playful, as well as morose and melancholic. </p>
+      <h2 class="cv__title subtitle">My experience</h2>
+      <div class="cv__section">
+        <h3 class="cv__title-meta">An overview of my work experience</h3>
+        <div class="cv__timeline">
 
-    <h2>What I'm still learning</h2>
-    <p>There is a huge gaping hole in my knowledge concerning the technical aspects of writing and an utter lack of experience working in a team (of writers). The former I'm trying to rectify by reading stuff, the latter I can't learn from books. I've also started with some unity tutorials, thinking that could nicely combine my technical background with my storytelling interests. </p>
+          <div class="cv__timeline-item">
+            <div class="cv__timeline-item-title">UX/UI expert
+              <div class="cv__timeline-item-wg">Cronos</div>
+            </div>
+            <div>2017 - current</div>
+          </div>
 
+          <div class="cv__timeline-item">
+            <div class="cv__timeline-item-title">Frontend developer
+              <div class="cv__timeline-item-wg">Cronos</div>
+            </div>
+            <div>2015 - 2017</div>
+          </div>
 
-    <h2>Why you want me (warning: presumptuous)</h2>
-    <p>Like everyone, I sport some flaws that I wil put somewhere in a tiny footnote, however, I want
-      to illustrate my incredible capacity for being enthusiastic, driven, and motivated when things interest me. I strive for perfection, and especially when things just don't <i>feel</i> right, I tend to keep tweaking until they do. Since I'm a nomad, I can move around easily and make sure I'm always in a timezone that matches the rest of the team.</p>
+          <div class="cv__timeline-item">
+            <div class="cv__timeline-item-title">Internship
+              <div class="cv__timeline-item-wg">EY</div>
+            </div>
+            <div>02/2015 - 05/2015</div>
+          </div>
 
-    <p>Bottom line: I'm fun, flexible, and I care about my work.</p>
+        </div>
+      </div>
+
+      <h2 class="cv__title subtitle">My education</h2>
+      <div class="cv__section">
+        <h3 class="cv__title-meta">Studies, courses, and certification</h3>
+        <div class="cv__timeline">
+
+          <div class="cv__timeline-item">
+            <div class="cv__timeline-item-title">NNG Interaction design 3/5
+              <div class="cv__timeline-item-wg">Nielsen Norman Group</div>
+            </div>
+            <div>04/2019</div>
+          </div>
+
+          <div class="cv__timeline-item">
+            <div class="cv__timeline-item-title">70-480: Programming in HTML5 with JavaScript and CSS3
+              <div class="cv__timeline-item-wg">Microsoft</div>
+            </div>
+            <div>06/2016</div>
+          </div>
+
+          <div class="cv__timeline-item">
+            <div class="cv__timeline-item-title">Bachelor Elektronics-ICT 
+              <div class="cv__timeline-item-wg">Artesis-Plantijn</div>
+            </div>
+            <div>09/2012 - 06/2015</div>
+          </div>
+
+           <div class="cv__timeline-item">
+            <div class="cv__timeline-item-title">Bachelor Psychology 
+              <div class="cv__timeline-item-wg">Thomas More</div>
+            </div>
+            <div>09/2009 - 06/2012</div>
+          </div>
+
+        </div>
+      </div>
+
     </section>
-    </main>
+  </main>
 
   <footer>
     <div class="container">
       <div class="team__tab">MEET THE TEAM</div>
       <div class="team">
         <span class="team__member">
-          <img src="profilepic.jpg" />
+          <img src="img/footer/designer.jpeg" />
           <span class="team__member-title">UX designer</span>
         </span>
         <span class="team__member">
-          <img src="dev.png" />
+          <img src="img/footer/dev2.jpg" />
           <span class="team__member-title">UI developer</span>
         </span>
         <span class="team__member">
-          <img src="writer.jpg" />
+          <img src="img/footer/writer2.jpg" />
           <span class="team__member-title">Creative writer</span>
         </span>
         <div class="contact">
           <div class="contact-title">Contact</div>
-          <div style="margin-bottom: .5rem;"><i class="fa fa-envelope mr1"></i>charlie.poiters@gmail.com</div>
+          <a class="contact__email" href="mailto:charlie.poiters@gmail.com.com"><i
+              class="fa fa-envelope mr1"></i>charlie.poiters@gmail.com</a>
           <div><i class="fa fa-phone mr1"></i>+32 496 29 64 53 (please don't call me, I'm a millenial)</div>
         </div>
       </div>

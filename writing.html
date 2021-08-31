@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="styling.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400&display=swap" rel="stylesheet">
+
   <script src="https://kit.fontawesome.com/4a1e676a86.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -17,21 +18,21 @@
 
   <header class="header">
     <nav class="container">
-      <a href="home.html" class="c-logo"><img alt="site logo" src="img/logo.png"/></a>
+      <a href="charlie.html" class="c-logo"><img alt="site logo" src="img/logo-full.svg"/></a>
       <ul>
-        <li><a href="/writing.html" class="active">Writing</a></li>
-        <li><a href="/ux-ui.html">UX/UI</a></li>
-        <li><a href="/about.html">About me</a></li>
+        <li><a href="/writing.html" class="active">writing</a></li>
+        <li><a href="/ux-ui.html">design</a></li>
+        <li><a href="/about.html">about me</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
+  <main class="container">
 
     <div class="c-project">
       <img class="c-project__ux-images -left" alt="illustration of the story" src="img/a-different-time.png" />
       <div class="c-project__description" id="project-inklestudio">
-        <h1>A different time</h1>
+        <h2 class="subtitle">A different time</h2>
         <p class="-blurp-text">An interactive short story — made with Inklewriter, or rather <i>being</i> made — about a young
           woman's troublesome teenage years and young adulthood, set against the background of a rapid changing world in
           the 1940's and 50's. The story centers around choices and the road(s) not taken. I want to use this narrative
@@ -43,7 +44,7 @@
 
     <div class="c-project" id="project-sana">
       <div class="c-project__description">
-        <h1>A highland heist</h1>
+        <h2 class="subtitle">A highland heist</h2>
         <p class="-blurp-text">
           A branching choose-your-own-adventure style story following a French detective investigating a puzzeling crime
           in the Scottisch highlands. It is published on the "Sana stories" platform; a reading app for romantic and
@@ -61,20 +62,20 @@
       <div class="team__tab">MEET THE TEAM</div>
       <div class="team">
         <span class="team__member">
-          <img src="profilepic.jpg" />
+          <img src="img/footer/designer.jpeg" />
           <span class="team__member-title">UX designer</span>
         </span>
         <span class="team__member">
-          <img src="dev.png" />
+          <img src="img/footer/dev2.jpg" />
           <span class="team__member-title">UI developer</span>
         </span>
         <span class="team__member">
-          <img src="writer.jpg" />
+          <img src="img/footer/writer2.jpg" />
           <span class="team__member-title">Creative writer</span>
         </span>
         <div class="contact">
           <div class="contact-title">Contact</div>
-          <div style="margin-bottom: .5rem;"><i class="fa fa-envelope mr1"></i>charlie.poiters@gmail.com</div>
+          <a class="contact__email" href="mailto:charlie.poiters@gmail.com.com"><i class="fa fa-envelope mr1"></i>charlie.poiters@gmail.com</a>
           <div><i class="fa fa-phone mr1"></i>+32 496 29 64 53 (please don't call me, I'm a millenial)</div>
         </div>
       </div>

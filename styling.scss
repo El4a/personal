@@ -23,14 +23,19 @@ li {
   border: 0;
 }
 
+
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   color: $color-primary;
+  font-size: 18px;
 }
 
-
+h1 {
+  font-size: 4rem;
+  margin-top: 0;
+}
 
 .button {
   padding: .5rem 1rem;
@@ -83,16 +88,21 @@ body {
 main {
   margin-top: 92px;
 
+  &.container {
+    padding-top: 5rem;
+  }
+
   a:not(.button) {
-    color: $color-accent-green;
+    color: $color-primary;
 
     &:hover {
       color: $color-primary;
+      color: lighten($color-primary, 15%);
     }
 
     &.active {
       font-weight: 700;
-      color: $color-primary;
+      color: lighten($color-primary, 15%);
       text-decoration: none;
     }
   }
@@ -145,13 +155,13 @@ header {
       font-weight: 400;
 
       &:hover:not(.active) {
-        text-decoration: underline;
         color: darken($color-accent, 5%);
       }
 
       &:focus,
       &.active {
         text-decoration: underline;
+        color: darken($color-accent, 5%);
       }
     }
   }
@@ -160,7 +170,7 @@ header {
 .banner {
   background-color: $color-primary;
   color: $color-accent;
-  padding-top: 1rem;
+  padding-top: 3rem;
   padding-bottom: 5rem; //2 when button is visible
 
   &__intro {
@@ -233,20 +243,110 @@ h2 {
 .intro {
   font-size: 1.25rem;
   line-height: 2rem;
-  color: #9097A0;
   width: 66%;
 }
 
 .-blurp-text {
   line-height: 2rem;
-  color: #9097A0;
   font-size: 18px;
   line-height: 1.75rem;
+  font-weight: 300;
 }
 
 
 
 .project-details {}
+
+
+.about-me {
+ &__meta {
+   font-size: 1rem;
+ }
+
+ &__bottom-line {
+   position: relative;
+
+   img {
+     position: absolute;
+     transform: translateY(-15%);
+     margin-left: 1rem;
+     width: 160px;
+   }
+ }
+}
+
+.cv {
+  margin-top: 5rem;
+  &__title {
+    border-bottom: 6px solid $color-accent;
+    padding-bottom: 1rem;
+    font-weight: 400;
+  }
+
+  &__title-meta {
+    width: 30%;
+    font-weight: 300;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-right: 3rem;
+  }
+
+  &__section {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__skills {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+
+  &__skill {
+    flex-basis: 20%;
+
+     ul {
+       list-style: none;
+       font-weight: 300;
+
+       li {
+         margin-bottom: .5rem;
+       }
+     }
+  }
+
+  &__skill-title {
+    margin-top: 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  &__timeline {
+    font-weight: 300;
+    flex-grow: 1;
+  }
+
+  &__timeline-item {
+    display: flex;
+    margin-bottom: 1.5rem;
+  }
+
+  &__timeline-item-title {
+    flex-basis: 30%;
+    font-weight: 400;
+    margin-right: 1rem;
+  }
+
+   &__timeline-item-wg {
+     font-weight: 300;
+     color: lighten($color-primary, 25%);
+   }
+}
+
+.download-btn {
+  font-size: 1.25rem;
+  float: right;
+}
 
 footer {
   background-color: $color-primary;

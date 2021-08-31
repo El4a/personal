@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="styling.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400&display=swap" rel="stylesheet">
+
   <script src="https://kit.fontawesome.com/4a1e676a86.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -18,27 +19,26 @@
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/mhayes-twentytwenty/1.0.0/css/twentytwenty.min.css" type="text/css" media="screen" />
 
-<script src="https://unpkg.com/cocoen/dist/cocoen.js"></script>
+  <script src="https://unpkg.com/cocoen/dist/cocoen.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
   <header class="header">
     <nav class="container">
-      <a href="home.html" class="c-logo"><img alt="site logo" src="img/logo.png" /></a>
+      <a href="charlie.html" class="c-logo"><img alt="site logo" src="img/logo-full.svg"/></a>
       <ul>
-        <li><a href="/writing.html">Writing</a></li>
-        <li><a href="/ux-ui.html" class="active">UX/UI</a></li>
-        <li><a href="/about.html">About me</a></li>
+        <li><a href="/writing.html">writing</a></li>
+        <li><a href="/ux-ui.html" class="active">design</a></li>
+        <li><a href="/about.html">about me</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
+  <main class="container">
     <div class="c-project" id="project-wg-dashboard">
       <div class="c-project__ui-images my-slider-manual">
         <img src="img/wg-dashboard/dashboard-after.png">
@@ -46,7 +46,7 @@
       </div>
        <div class="c-project__ux-description -right">
         <div class="c-project__ux-description-wrapper">
-          <h1>Webapp dashboard</h1>
+          <h2 class="subtitle">Webapp dashboard</h2>
           <p class="-blurp-text">An ancient landingspage in serious need of an update. Transforming an incredibly static page – merely containing entry points to various other applications – to an insightful dashboard, bringing all the relevant data directly to the user. And of course, considering more than 50% of users visit via mobile, offering a reponsive experience this time around.</p>
           </div>
       </div>
@@ -55,7 +55,7 @@
     <div class="c-project" id="project-homepage">
       <div class="c-project__ux-description -left">
         <div class="c-project__ux-description-wrapper">
-          <h1>Personalized homepage</h1>
+          <h2 class="subtitle">Personalized homepage</h2>
           <p class="-blurp-text">A unifying project to accommodate our users in finding an overview of all their
             career-related services in one go. Required to be usable by anyone everywhere, meaning a strong emphasis on
             being super-userfriendly, accessible, and responsive. </p>
@@ -76,7 +76,7 @@
       </div>
        <div class="c-project__ux-description -right">
         <div class="c-project__ux-description-wrapper">
-          <h1>Tasklist dashboard</h1>
+          <h2 class="subtitle">Tasklist dashboard</h2>
           <p class="-blurp-text">A challenging, classicaly overloaded, legacy application that was (over)due for an overhaul. The main improvement was reducing the length and complexity of the list, changing it into a combination of priority-based "new"-alerts and custom presets to filter – effectively handing the users a trackable to-do list.</p>
         </div>
       </div>
@@ -85,7 +85,7 @@
     <div class="c-project" id="project-content">
       <div class="c-project__ux-description -left">
         <div class="c-project__ux-description-wrapper">
-          <h1>Contentpages</h1>
+          <h2 class="subtitle">Contentpages</h2>
           <p class="-blurp-text">Apart from interactive webapplications, there have also been a multitude of static contentpages to (re)design, adhering to the branding styleguide and coherent with the client's overal digital presence. Again, usability is key which means larger fonts and spacing, easily distinguishable links, and in-your-face CTA's.</p>
           </div>
       </div>
@@ -108,7 +108,7 @@
 
        <div class="c-project__ux-description -right">
         <div class="c-project__ux-description-wrapper">
-          <h1>Design system</h1>
+          <h2 class="subtitle">Design system</h2>
           <p class="-blurp-text">For the past six years, I have maintained, extended, and rebuild our current in-house design system. This consists of HTML & Sass files with BEM formatting, compiled by a NPM-Gulp combo into a markdown/handlebars documentation site. Here we document our branding and guidelines as well as present standalone components and full code-ready html mockups.</p>
         </div>
       </div>
@@ -118,7 +118,7 @@
     <div class="c-project">
        <div class="c-project__ux-description -left">
         <div class="c-project__ux-description-wrapper">
-          <h1>Housewarming (side project)</h1>
+          <h2 class="subtitle">Housewarming (side project)</h2>
             <p class="-blurp-text">A superfluous side-project I did for fun and to avoid answering the same questions a gazillion times, while providing a streamlined way for everyone to get their drinks. It's thrown together with Vue.js and a very shoddy JSON backend.</p>
             <p class=""> Most likely no longer fully functional (I won't show up with a drink), but still online to take a look.</p>
             <a class="button" href="https://housewarming.poiters.be" target=”_blank”>Live demo</a> <span>(Made for mobile)</span>
@@ -137,20 +137,20 @@
       <div class="team__tab">MEET THE TEAM</div>
       <div class="team">
         <span class="team__member">
-          <img src="profilepic.jpg" />
+          <img src="img/footer/designer.jpeg" />
           <span class="team__member-title">UX designer</span>
         </span>
         <span class="team__member">
-          <img src="dev.png" />
+          <img src="img/footer/dev2.jpg" />
           <span class="team__member-title">UI developer</span>
         </span>
         <span class="team__member">
-          <img src="writer.jpg" />
+          <img src="img/footer/writer2.jpg" />
           <span class="team__member-title">Creative writer</span>
         </span>
         <div class="contact">
           <div class="contact-title">Contact</div>
-          <div style="margin-bottom: .5rem;"><i class="fa fa-envelope mr1"></i>charlie.poiters@gmail.com</div>
+          <a class="contact__email" href="mailto:charlie.poiters@gmail.com.com"><i class="fa fa-envelope mr1"></i>charlie.poiters@gmail.com</a>
           <div><i class="fa fa-phone mr1"></i>+32 496 29 64 53 (please don't call me, I'm a millenial)</div>
         </div>
       </div>
