@@ -12,6 +12,11 @@
   <script src="https://kit.fontawesome.com/4a1e676a86.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!-- carousel -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
 </head>
 
 <body>
@@ -30,31 +35,62 @@
   <main class="container">
 
     <div class="c-project">
-      <img class="c-project__ux-images -left" alt="illustration of the story" src="img/a-different-time.png" />
-      <div class="c-project__description" id="project-inklestudio">
+      <div class="c-project__description -right" id="project-inklestudio">
         <h2 class="subtitle">A different time</h2>
-        <p class="-blurp-text">An interactive short story — made with Inklewriter, or rather <i>being</i> made — about a young
+        <p class="">An interactive short story — made with Inklewriter, or rather <i>being</i> made — about a young
           woman's troublesome teenage years and young adulthood, set against the background of a rapid changing world in
           the 1940's and 50's. The story centers around choices and the road(s) not taken. I want to use this narrative
           to explore and highlight my own privileges (and those of my peers) in contrast to the social and economical
           restrictions of the previous generations.</p>
-        <a class="button" href="https://www.inklewriter.com/stories/64449" target="_blank">Read the story so far</a>
+          <a class="button" href="https://www.inklewriter.com/stories/64449" target="_blank">Read the story so far</a>
+        </div>
+        <img class="c-project__ux-images" alt="illustration of the story" src="img/a-different-time.png" />
+    </div>
+
+     <div class="c-project" id="project-office-wars">
+      <div class="c-project__description">
+        <h2 class="subtitle">Office Wars</h2>
+        <p class="">
+          A few samples of item descriptions of a mini RPG game – "Office Wars" – I'm working on, which will feature characters totally not based on my current coworkers, such as:
+        </p>
+        <p>Ice-man : Always too warm. Wants to sit next to, below, or preferably inside the airco. Wears shorts until mid-november. </p>
+        <p>Seductress : Prowls around the coffee machine, waiting for unsuspecting victims to start a conversation. Has 82 new pictures of her children at any point in time. Will relentlessly repeat the same weekend-story. Weakens your already non-existing willpower and makes sure you get no work done.</p>
+        <p>The Void : Helpdesk tickets disappear into thin air, e-mails are bounced back, is never to be found at his desk. Holds mystery knowledge of the Ancient Systems. Not even sure he's an actual employee anymore.</p>
+       
+      </div>
+      <div class="c-project__ux-images my-slider-manual">
+        <img src="img/writing-samples/item-blue-collar.svg">
+        <img src="img/writing-samples/item-suit.svg">
+        <img src="img/writing-samples/item-coffee.svg">
       </div>
     </div>
 
     <div class="c-project" id="project-sana">
-      <div class="c-project__description">
+      <div class="c-project__description -right">
         <h2 class="subtitle">A highland heist</h2>
-        <p class="-blurp-text">
+        <p class="">
           A branching choose-your-own-adventure style story following a French detective investigating a puzzeling crime
           in the Scottisch highlands. It is published on the "Sana stories" platform; a reading app for romantic and
           thrilling original stories, where you get to choose between multiple storylines and different endings.</p>
         <p>
-          Unfortunately, this is only accessible through their (free) app available for Android & Apple. Once installed,
+          Unfortunately, this is only accessible through a (free) app available for Android & Apple. Once installed,
           you can easily find the story via <a href="https://sanastoriesdeeplinks.page.link/aovy">this link</a>.</p>
       </div>
-      <img class="c-project__ux-images -right" alt="illustration of the story" src="img/sana.png" />
+      <img class="c-project__ux-images" alt="illustration of the story" src="img/sana.png" />
     </div>
+
+    <div class="c-project" id="project-cherimoya">
+      <div class="c-project__description">
+        <h2 class="subtitle">I do declare thee subpar</h2>
+        <p class="">
+         I was once so annoyed with a piece of fruit, I decide to expurge my disappointment and vexation through text. It was very catharthic. Make of that what you will.</p>
+         <a href="cherimoya.html" class="button">Read</a>
+
+      </div>
+      <img class="c-project__ux-images" alt="illustration of the story" src="img/cherimoya.jpeg" style="width: 35%;
+    margin: auto;"/>
+    </div>
+
   </main>
 
   <footer>
@@ -81,6 +117,12 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    $('.my-slider-manual').slick({
+      dots: true
+    });
+  </script>
 </body>
 
 </html>
