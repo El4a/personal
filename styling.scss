@@ -21,6 +21,7 @@ li {
   padding: 0;
   vertical-align: baseline;
   border: 0;
+    font-weight: 300;
 }
 
 
@@ -35,6 +36,18 @@ body {
 h1 {
   font-size: 4rem;
   margin-top: 0;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+p {
+  line-height: 28px;
+}
+
+a {
+  text-underline-position: under;
 }
 
 .button {
@@ -172,6 +185,7 @@ header {
   color: $color-accent;
   padding-top: 3rem;
   padding-bottom: 5rem; //2 when button is visible
+  margin-bottom: 3rem;
 
   &__intro {
     text-align: center;
@@ -187,7 +201,7 @@ header {
     font-size: 2rem;
     width: 81%;
     margin: auto;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 3rem;
   }
 
@@ -197,9 +211,7 @@ header {
   }
 }
 
-h2 {
-  margin-top: 3rem;
-}
+
 
 .subtitle {
   font-size: 2.5rem;
@@ -226,7 +238,7 @@ h2 {
     margin-top: 0;
     font-size: 18px;
     font-weight: 300;
-    line-height: 22px;
+    line-height: 28px;
   }
 
   .button {
@@ -244,13 +256,6 @@ h2 {
   font-size: 1.25rem;
   line-height: 2rem;
   width: 66%;
-}
-
-.-blurp-text {
-  line-height: 2rem;
-  font-size: 18px;
-  line-height: 1.75rem;
-  font-weight: 300;
 }
 
 
@@ -346,6 +351,8 @@ h2 {
 .download-btn {
   font-size: 1.25rem;
   float: right;
+  text-underline-position: under;
+  text-decoration-thickness: 2px;
 }
 
 footer {
@@ -378,6 +385,10 @@ footer {
       flex-direction: column;
       align-items: center;
       padding: 1.5rem 0;
+    }
+
+    &__member-title {
+      font-weight: 500;
     }
   }
 
@@ -433,33 +444,21 @@ footer {
 
 .c-project {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 7rem;
 
   &__description {
+    max-width: 40%;
     margin: 0 4rem;
-  }
-
-  &__ux-description {
-    width: 50%;
-
-    &.-left {
-      margin-right: 5%;
-    }
 
     &.-right {
-      margin-left: 5%;
+      order: 1;
     }
-  }
-
-  &__ux-description-wrapper {
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   &__ux-images {
-    width: 40%;
+    width: 45%;
 
     img {
       max-width: 100%; //breaks cocoen
@@ -467,19 +466,7 @@ footer {
   }
 
   &__ui-images {
-    width: 40%;
-  }
-
-  .image {
-    width: 40%;
-
-    &.-left {
-      margin-right: 5%;
-    }
-
-    &.-right {
-      margin-left: 5%;
-    }
+    width: 45%;
   }
 
   .max-w-100 {
