@@ -260,9 +260,6 @@ header {
 
 
 
-.project-details {}
-
-
 .about-me {
  &__meta {
    font-size: 1rem;
@@ -441,6 +438,10 @@ footer {
   box-shadow: 10px 10px 14px -8px rgba(97, 91, 97, 1);
 }
 
+
+.projects {
+  margin-top: 8rem;
+}
 
 .c-project {
   display: flex;

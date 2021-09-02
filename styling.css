@@ -473,6 +473,10 @@ footer .contact-title {
           box-shadow: 10px 10px 14px -8px #615b61;
 }
 
+.projects {
+  margin-top: 8rem;
+}
+
 .c-project {
   display: -webkit-box;
   display: -ms-flexbox;

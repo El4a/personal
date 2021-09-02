@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Charlie's web(site)</title>
+  <title>Should you hire me?</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +13,7 @@
 </head>
 
 <body>
+  
 <!-- 2200 835 200 250.5 potential better viewbox -->
 <!-- previous viewBox="2488 1150 150 265" -->
 <!-- onclick="location.href='mailto:charlie.poiters@gmail.com?subject=Freakin cool flowchart';" -->
@@ -189,7 +190,7 @@
 </g>
 </g>
 <g id="g-b-congrats">
-<text id="Yes! You made it through. Only 1 question remains..." fill="#B9FED6" xml:space="preserve" style="white-space: pre" font-family="Dosis" font-size="16" font-weight="bold" letter-spacing="0em"><tspan x="3739.98" y="4148.32">Yes! You made it through. </tspan><tspan x="3740.61" y="4168.32">Only 1 question remains...</tspan></text>
+<text id="Yes! You made it through. Only 1 question remains..." fill="#B9FED6" xml:space="preserve" style="white-space: pre" font-family="Dosis" font-size="16" font-weight="600" letter-spacing="0em"><tspan x="3739.98" y="4148.32">Yes! You made it through. </tspan><tspan x="3740.61" y="4168.32">Only 1 question remains...</tspan></text>
 </g>
 <g id="g-end-respect">
 <g id="Rectangle 15_5">
@@ -756,7 +757,7 @@
 <path id="Union_29" fill-rule="evenodd" clip-rule="evenodd" d="M748 1181.5L742 1183.5L748 1185.5L745.923 1184H886.077L884 1185.5L890 1183.5L884 1181.5L886.077 1183H745.923L748 1181.5Z" fill="#7DAF92" fill-opacity="0.4"/>
 </g>
 <g id="w-b-style-no">
-<text id="// TODO // Placeholder text // how weird would they // be to choose this // option anyway // idea for later: just throw error? // LoL" fill="#B9FED6" xml:space="preserve" style="white-space: pre" font-family="Dosis" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="1140" y="744.53">// TODO&#10;</tspan><tspan x="1140" y="762.53">// Placeholder text&#10;</tspan><tspan x="1140" y="780.53">// how weird would they&#10;</tspan><tspan x="1140" y="798.53">// be to choose this &#10;</tspan><tspan x="1140" y="816.53">// option anyway&#10;</tspan><tspan x="1140" y="834.53">// idea for later: just throw error? &#10;</tspan><tspan x="1140" y="852.53">// LoL</tspan></text>
+<text id=" PLACEHOLDER TEXT // how weird would they // be to choose this // option anyway // idea for later: just throw error?" fill="#B9FED6" xml:space="preserve" style="white-space: pre" font-family="Dosis" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="1140" y="744.53">// TODO&#10;</tspan><tspan x="1140" y="762.53">// Placeholder text&#10;</tspan><tspan x="1140" y="780.53">// how weird would they&#10;</tspan><tspan x="1140" y="798.53">// be to choose this &#10;</tspan><tspan x="1140" y="816.53">// option anyway&#10;</tspan><tspan x="1140" y="834.53">// idea for later: just throw error? &#10;</tspan><tspan x="1140" y="852.53">// LoL</tspan></text>
 </g>
 <g id="w-b-style-4">
 <text id="And I definitely don&#226;&#128;&#153;t repeat myself." fill="#B9FED6" xml:space="preserve" style="white-space: pre" font-family="Dosis" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="1294.91" y="1170.53">And I definitely don&#x2019;t </tspan><tspan x="1312.65" y="1188.53">repeat myself.</tspan></text>
@@ -1170,14 +1171,14 @@ function moveTwice(origin, mid, end) {
     midView = "" + (m.x - amt) + " " + (m.y - amt) + " " + (m.width + amt*2) + " " + (m.height + amt*2);
     endView = "" + (e.x - amt) + " " + (e.y - amt) + " " + (e.width + amt*2) + " " + (e.height + amt*2);
     var tl = new TimelineLite();
-    tl.to(graphic, 2.25, {
+    tl.to(graphic, 1.5, {
         attr: { viewBox: midView },
         ease:Circ.easeOut
       });
-    tl.to(graphic, 2.25, {
+    tl.to(graphic, 1.5, {
         attr: { viewBox: endView },
         ease:Circ.easeOut
-      }, "+=1");
+      }, "+=1.5");
     // tl.staggerFromTo(endRect, 3, {
     //   drawSVG:"0 0"
     // }, {
@@ -1211,26 +1212,26 @@ function moveFive(origin, first, second, third, fourth, end) {
     fourView = "" + (four.x - amt) + " " + (four.y - amt) + " " + (four.width + amt*2) + " " + (four.height + amt*2);
     endView = "" + (e.x - amt) + " " + (e.y - amt) + " " + (e.width + amt*2) + " " + (e.height + amt*2);
     var tl = new TimelineLite();
-    tl.to(graphic, .5, {
+    tl.to(graphic, 1, {
         attr: { viewBox: oneView },
         ease:Circ.easeOut
       });
-    tl.to(graphic, .5, {
+    tl.to(graphic, 1, {
       attr: { viewBox: twoView },
       ease:Circ.easeOut
-    }, "+=1");
-    tl.to(graphic, .5, {
+    }, "+=1.5");
+    tl.to(graphic, 1, {
       attr: { viewBox: threeView },
       ease:Circ.easeOut
-    }, "+=1");
-      tl.to(graphic, .5, {
+    }, "+=1.5");
+      tl.to(graphic, 1, {
       attr: { viewBox: fourView },
       ease:Circ.easeOut
-    }, "+=1");
-  tl.to(graphic, .5, {
+    }, "+=1.5");
+  tl.to(graphic, 1, {
       attr: { viewBox: endView },
       ease:Circ.easeOut
-    }, "+=1");
+    }, "+=1.5");
    });
 }
 
