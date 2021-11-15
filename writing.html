@@ -14,16 +14,16 @@
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
   <!-- carousel -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
 
   <header class="header">
     <nav class="container">
-      <a href="charlie.html" class="c-logo"><img alt="site logo" src="img/logo-full.svg"/></a>
+      <a href="charlie.html" class="c-logo"><img alt="site logo" src="img/logo-full.svg" /></a>
       <ul>
         <li><a href="/writing.html" class="active">writing</a></li>
         <li><a href="/ux-ui.html">design</a></li>
@@ -35,69 +35,191 @@
   <main class="container">
 
     <h1>Writing samples</h1>
+    <!-- <a href="#" class="icon" style="float:right;">Should  <br> you <br>hire me?</a> -->
+
+    <style>
+      .icon {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        border-radius: 100%;
+        color: #fff !important;
+        text-decoration: none;
+        text-align: center;
+        line-height: 44px;
+        font-size: 35px;
+        padding: 60px 60px;
+        text-align: center;
+        background-image: linear-gradient(to bottom right, rgb(148, 95, 80) 0%, rgb(252, 197, 179) 50%, rgb(148, 95, 80) 100%);
+        animation: rot 5s ease-in-out infinite;
+        transform-style: preserve-3d;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+      }
+
+      .icon:after {
+
+        animation: shine 5s ease-in-out infinite;
+        animation-fill-mode: forwards;
+        content: "";
+        position: absolute;
+        top: -110%;
+        left: -210%;
+        width: 200%;
+        height: 200%;
+        opacity: 0;
+        transform: rotate(30deg);
+
+        background: rgba(255, 255, 255, 0.13);
+        background: linear-gradient(to right,
+            rgba(255, 255, 255, 0.13) 0%,
+            rgba(255, 255, 255, 0.13) 77%,
+            rgba(255, 255, 255, 0.5) 92%,
+            rgba(255, 255, 255, 0.0) 100%);
+      }
+
+      /* Hover state - trigger effect */
+
+
+      /* Active state */
+
+      .icon:active:after {
+        opacity: 0;
+      }
+
+      @keyframes shine {
+        10% {
+          opacity: 1;
+          top: -30%;
+          left: -30%;
+          transition-property: left, top, opacity;
+          transition-duration: 0.10s, 0.10s, 0.20s;
+          transition-timing-function: ease;
+        }
+
+        100% {
+          opacity: 0;
+          top: -30%;
+          left: -30%;
+          transition-property: left, top, opacity;
+        }
+      }
+
+      @keyframes rot {
+        50% {
+          transform: rotateY(0.5turn);
+        }
+
+        100% {
+          transform: rotateY(1turn);
+        }
+      }
+    </style>
 
     <p class="intro">
-     I know, I know: I don't have a lot of convincing work yet; no shipped titles nor tangible work experience. But hey, you made it this far! So captalizing on a human's general inclination to the sunken-cost-fallacy, at least read some samples or skip right away to answering the question of <a href="should-you-hire-me.html" target="_blank">"Should you hire me?"</a>
+      I know, I know: I don't have a lot of convincing work yet; no shipped titles nor tangible work experience. But
+      hey, you made it this far! So captalizing on a human's general inclination to the sunken-cost-fallacy, at least
+      read some samples or skip right away to answering the question of <a href="should-you-hire-me.html"
+        target="_blank">"Should you hire me?"</a>
     </p>
 
 
     <section class="projects">
-    <div class="c-project">
-      <div class="c-project__description -right" id="project-inklestudio">
-        <h2 class="subtitle">A different time</h2>
-        <p class="">An interactive short story — made with Inklewriter, or rather <i>being</i> made — about a young
-          woman's troublesome teenage years and young adulthood, set against the background of a rapid changing world in
-          the 1940's and 50's. The story centers around choices and the road(s) not taken. I want to use this narrative
-          to explore and highlight my own privileges (and those of my peers) in contrast to the social and economical
-          restrictions of the previous generations.</p>
+      <div class="c-project">
+        <div class="c-project__description" id="project-date">
+          <h2 class="subtitle">The Date</h2>
+          <p class="">An anxious woman has her thoughts reflected in a seemingly ordinary encounter, when the realms of
+            reality and solipsism coalesce. A slightly absurd sample of where my mind wanders when freewriting.</p>
+          <div class="c-project__tags">
+            <span class="c-project__tag">freewriting</span>
+            <span class="c-project__tag">absurd</span>
+            <span class="c-project__tag">romance</span>
+            <span class="c-project__tag">dark</span>
+          </div>
+          <a href="the-date.html" class="button">Read</a>
+        </div>
+        <img class="c-project__ux-images" alt="illustration of the story" src="img/writing-samples/hallway.jpg"
+          style="border-radius:10px" />
+      </div>
+
+      <div class="c-project">
+        <div class="c-project__description -right" id="project-inklestudio">
+          <h2 class="subtitle">A different time</h2>
+          <p class="">An interactive short story — made with Inklewriter, or rather <i>being</i> made — about a young
+            woman's troublesome teenage years and young adulthood, set against the background of a rapid changing world
+            in
+            the 1940's and 50's. The story centers around choices and the road(s) not taken. I want to use this
+            narrative
+            to explore and highlight my own privileges (and those of my peers) in contrast to the social and economical
+            restrictions of the previous generations.</p>
+          <div class="c-project__tags">
+            <span class="c-project__tag">branching narrative</span>
+            <span class="c-project__tag">bildungsroman</span>
+            <span class="c-project__tag">short story</span>
+          </div>
           <a class="button" href="https://www.inklewriter.com/stories/64449" target="_blank">Read the story so far</a>
         </div>
         <img class="c-project__ux-images" alt="illustration of the story" src="img/a-different-time.png" />
-    </div>
-
-     <div class="c-project" id="project-office-wars">
-      <div class="c-project__description">
-        <h2 class="subtitle">Office Wars</h2>
-        <p class="">
-          A few samples of item descriptions of a mini RPG game – "Office Wars" – I'm working on, which will feature characters totally not based on my current coworkers, such as:
-        </p>
-        <p>Ice-man : Always too warm. Wants to sit next to, below, or preferably inside the airco. Wears shorts until mid-november. </p>
-        <p>Seductress : Prowls around the coffee machine, waiting for unsuspecting victims to start a conversation. Has 82 new pictures of her children at any point in time. Will relentlessly repeat the same weekend-story. Weakens your already non-existing willpower and makes sure you get no work done.</p>
-        <p>The Void : Helpdesk tickets disappear into thin air, e-mails are bounced back, is never to be found at his desk. Holds mystery knowledge of the Ancient Systems. Not even sure he's an actual employee anymore.</p>
-       
       </div>
-      <div class="c-project__ux-images my-slider-manual">
-        <img src="img/writing-samples/item-blue-collar.svg">
-        <img src="img/writing-samples/item-suit.svg">
-        <img src="img/writing-samples/item-coffee.svg">
-      </div>
-    </div>
 
-    <div class="c-project" id="project-sana">
-      <div class="c-project__description -right">
-        <h2 class="subtitle">A highland heist</h2>
-        <p class="">
-          A branching choose-your-own-adventure style story following a French detective investigating a puzzeling crime
-          in the Scottisch highlands. It is published on the "Sana stories" platform; a reading app for romantic and
-          thrilling original stories, where you get to choose between multiple storylines and different endings.</p>
-        <p>
-          Unfortunately, this is only accessible through a (free) app available for Android & Apple. Once installed,
-          you can easily find the story via <a href="https://sanastoriesdeeplinks.page.link/aovy">this link</a>.</p>
-      </div>
-      <img class="c-project__ux-images" alt="illustration of the story" src="img/sana.png" />
-    </div>
+      <div class="c-project" id="project-office-wars">
+        <div class="c-project__description">
+          <h2 class="subtitle">Office Wars</h2>
+          <p class="">
+            A few samples of item descriptions of a mini RPG game – "Office Wars" – I'm working on, which will feature
+            characters totally not based on my current coworkers, such as:
+          </p>
+          <p>Ice-man : Always too warm. Wants to sit next to, below, or preferably inside the airco. Wears shorts until
+            mid-november. </p>
+          <p>Seductress : Prowls around the coffee machine, waiting for unsuspecting victims to start a conversation.
+            Has 82 new pictures of her children at any point in time. Will relentlessly repeat the same weekend-story.
+            Weakens your already non-existing willpower and makes sure you get no work done.</p>
+          <p>The Void : Helpdesk tickets disappear into thin air, e-mails are bounced back, is never to be found at his
+            desk. Holds mystery knowledge of the Ancient Systems. Not even sure he's an actual employee anymore.</p>
 
-    <div class="c-project" id="project-cherimoya">
-      <div class="c-project__description">
-        <h2 class="subtitle">I do declare thee subpar</h2>
-        <p class="">
-         I was once so annoyed with a piece of fruit, I decide to expurge my disappointment and vexation through text. It was very catharthic. Make of that what you will.</p>
-         <a href="cherimoya.html" class="button">Read</a>
-
+        </div>
+        <div class="c-project__ux-images my-slider-manual">
+          <img src="img/writing-samples/item-blue-collar.svg">
+          <img src="img/writing-samples/item-suit.svg">
+          <img src="img/writing-samples/item-coffee.svg">
+        </div>
       </div>
-      <img class="c-project__ux-images" alt="illustration of the story" src="img/cherimoya.jpeg" style="width: 35%;
-    margin: auto;"/>
-    </div>
+
+      <div class="c-project" id="project-sana">
+        <div class="c-project__description -right">
+          <h2 class="subtitle">A highland heist</h2>
+          <p class="">
+            A branching choose-your-own-adventure style story following a French detective investigating a puzzeling
+            crime
+            in the Scottisch highlands. It is published on the "Sana stories" platform; a reading app for romantic and
+            thrilling original stories, where you get to choose between multiple storylines and different endings.</p>
+          <p>
+            Unfortunately, this is only accessible through a (free) app available for Android & Apple. Once installed,
+            you can easily find the story via <a href="https://sanastoriesdeeplinks.page.link/aovy">this link</a>.</p>
+            <div class="c-project__tags">
+            <span class="c-project__tag">branching narrative</span>
+            <span class="c-project__tag">romance</span>
+            <span class="c-project__tag">mystery</span>
+          </div>
+        </div>
+        <img class="c-project__ux-images" alt="illustration of the story" src="img/sana.png" />
+      </div>
+
+      <div class="c-project" id="project-cherimoya">
+        <div class="c-project__description">
+          <h2 class="subtitle">I do declare thee subpar</h2>
+          <p class="">
+            I was once so annoyed with a piece of fruit, I decide to expurge my disappointment and vexation through
+            text. It was very catharthic. Make of that what you will.</p>
+            <div class="c-project__tags">
+            <span class="c-project__tag">humor</span>
+            <span class="c-project__tag">short essay</span>
+          </div>
+          <a href="cherimoya.html" class="button">Read</a>
+
+        </div>
+        <img class="c-project__ux-images" alt="illustration of the story" src="img/cherimoya.jpeg" style="width: 35%;
+    margin: auto;" />
+      </div>
 
     </section>
 
@@ -121,7 +243,8 @@
         </span>
         <div class="contact">
           <div class="contact-title">Contact</div>
-          <a class="contact__email" href="mailto:charlie.poiters@gmail.com"><i class="fa fa-envelope mr1"></i>charlie.poiters@gmail.com</a>
+          <a class="contact__email" href="mailto:charlie.poiters@gmail.com"><i
+              class="fa fa-envelope mr1"></i>charlie.poiters@gmail.com</a>
           <div><i class="fa fa-phone mr1"></i>+32 496 29 64 53 (please don't call me, I'm a millenial)</div>
         </div>
       </div>

@@ -92,6 +92,8 @@ a {
   margin-right: auto;
   padding: 0 1rem;
   position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 main {
@@ -499,6 +501,19 @@ footer .contact-title {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
+}
+
+.c-project__tags {
+  margin-bottom: 2rem;
+}
+
+.c-project__tag {
+  padding: 0.25rem 0.5rem;
+  background: #7daf9247;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: .725rem;
+  font-weight: 500;
 }
 
 .c-project__ux-images {
