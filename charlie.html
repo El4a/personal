@@ -1,106 +1,146 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <title>Charlie's web(site)</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="styling.css">
-  <link rel="stylesheet" href="animatedLetters.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/4a1e676a86.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <head>
+    <title>Charlie's web(site)</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styling.css" />
+    <link rel="stylesheet" href="animatedLetters.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4a1e676a86.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
     <script src="animatedLetters.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
+    <header class="header">
+      <div class="company-header">BEYOND THE PALE</div>
+      <nav class="container">
+        <a href="charlie.html" class="c-logo"
+          ><img alt="site logo" src="img/logo-full.svg"
+        /></a>
+        <ul>
+          <li><a href="/writing.html">writing</a></li>
+          <li><a href="/ux-ui.html">design</a></li>
+          <li><a href="/about.html">about me</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <header class="header">
-    <nav class="container">
-      <a href="charlie.html" class="c-logo"><img alt="site logo" src="img/logo-full.svg"/></a>
-      <ul>
-        <li><a href="/writing.html">writing</a></li>
-        <li><a href="/ux-ui.html">design</a></li>
-        <li><a href="/about.html">about me</a></li>
-      </ul>
-    </nav>
-  </header>
+    <main>
+      <div class="banner">
+        <div class="container">
+          <section class="banner__intro">
+            <h1 class="cd-headline letters rotate-2">
+              <span>Hi, I'm Charlie: </span>
+              <span class="cd-words-wrapper">
+                <b class="is-visible">UX-designer</b>
+                <b>UI-developer</b>
+                <b>Creative-writer</b>
+              </span>
+            </h1>
+          </section>
 
+          <p>
+            Every story has its own challenges and every audience the need for a
+            unique narrative. My approach to all my projects is one of
+            creativity combined with a flowing, natural communication that is
+            usercentric, friendly, and inviting.
+          </p>
 
-  <main>
-  <div class="banner">
-    <div class="container">
-    <section class="banner__intro">
-      <h1 class="cd-headline letters rotate-2">
-        <span>Hi, I'm Charlie: </span>
-        <span class="cd-words-wrapper">
-          <b class="is-visible">UX-designer</b>
-          <b>UI-developer</b>
-          <b>Creative-writer</b>
-        </span>
-      </h1>
-    </section> 
-
-    <p>
-    Every story has its own challenges and every audience the need for a unique narrative. My approach to all my projects is one of creativity combined with a flowing, natural communication that is usercentric, friendly, and inviting.
-    </p>
-
-    <!-- <button class="button -big -light banner__cta">Should you hire me?</button> -->
-  </div>
-  </div>
-
-  <div class="container">
-    <h2 class="subtitle">Let me tell you about...</h2>
-    <div class="categories">
-    <div class="category-card">
-      <h3 class="category-card__title">...my UX/UI work</h3>
-      <p>For the past 6 years I have been working for a public institution, mainly creating enterprise webapplications. That includes dealing with heaps of stakeholders & analysts (some better, some worse), code reviewing teammates, processing user feedback and searching for compromises. I have excellent HTML/CSS skills, a good understanding of javascript, Sketch/Figma daily use, experience (albeit a tad outdated) with Angular and Vue, and the well-developed ability to google everything else.
-</p>
-      <a href="/ux-ui.html" class="button">See projects</a>
-    </div>
-
-      <div class="category-card">
-      <h3 class="category-card__title">...my writing</h3>
-      <p>After being a passionate consumer for many years for all things text-related – novels, RPG's, narrative driven games, bedtime stories, myths, history, DnD recaps, and (in desperate times) shampoo bottles – I'm determined to cross over to the other side and become a creator. I write in a brisk, easily digestible style, that can be both whimsical and playful – sometimes downright snarky – as well as more serious and emotive. I'm up for anything, but with a preference for fantasy related content; be it dialogue, quest text, or item descriptions. </p>
-      <a href="/writing.html" class="button">Read samples</a>
-    </div>
-
-      <div class="category-card">
-      <h3 class="category-card__title">...me!</h3>
-      <p>I'm a digital nomad, currently enjoying this privilege travelling around the world, working freelance as a UX/UI/Interaction expert/consultant (pick whichever title you find most appealing) for an awesome USA based company. I want to find projects that excite me, push me to the best of my ability, and have me look back at the finished results with satisfaction.</p>
-      <a href="about.html" class="button">Get to know me</a>
-    </div>
-    </div>
-  </div>
-</main>
-
-  <footer>
-    <div class="container">
-      <div class="team__tab">MEET THE TEAM</div>
-      <div class="team">
-        <span class="team__member">
-          <img src="img/footer/designer.jpeg" />
-          <span class="team__member-title">UX designer</span>
-        </span>
-        <span class="team__member">
-          <img src="img/footer/dev.jpg" />
-          <span class="team__member-title">UI developer</span>
-        </span>
-        <span class="team__member">
-          <img src="img/footer/writer.jpg" />
-          <span class="team__member-title">Creative writer</span>
-        </span>
-        <div class="contact">
-          <div class="contact-title">Contact</div>
-          <a class="contact__email" href="mailto:charlie.poiters@gmail.com"><i class="fa fa-envelope mr1"></i>charlie.poiters@gmail.com</a>
-          <div><i class="fa fa-phone mr1"></i>+32 496 29 64 53 (please don't call me, I'm a millenial)</div>
+          <!-- <button class="button -big -light banner__cta">Should you hire me?</button> -->
         </div>
       </div>
-    </div>
-  </footer>
 
-</body>
+      <div class="container">
+        <h2 class="subtitle">Let me tell you about...</h2>
+        <div class="categories">
+          <div class="category-card">
+            <h3 class="category-card__title">...my UX/UI work</h3>
+            <p>
+              For the past 6 years I have been working for a public institution,
+              mainly creating enterprise webapplications. That includes dealing
+              with heaps of stakeholders & analysts (some better, some worse),
+              code reviewing teammates, processing user feedback and searching
+              for compromises. I have excellent HTML/CSS skills, a good
+              understanding of javascript, Sketch/Figma daily use, experience
+              (albeit a tad outdated) with Angular and Vue, and the
+              well-developed ability to google everything else.
+            </p>
+            <a href="/ux-ui.html" class="button">See projects</a>
+          </div>
 
+          <div class="category-card">
+            <h3 class="category-card__title">...my writing</h3>
+            <p>
+              After being a passionate consumer for many years for all things
+              text-related – novels, RPG's, narrative driven games, bedtime
+              stories, myths, history, DnD recaps, and (in desperate times)
+              shampoo bottles – I'm determined to cross over to the other side
+              and become a creator. I write in a brisk, easily digestible style,
+              that can be both whimsical and playful – sometimes downright
+              snarky – as well as more serious and emotive. I'm up for anything,
+              but with a preference for fantasy related content; be it dialogue,
+              quest text, or item descriptions.
+            </p>
+            <a href="/writing.html" class="button">Read samples</a>
+          </div>
+
+          <div class="category-card">
+            <h3 class="category-card__title">...me!</h3>
+            <p>
+              I'm a digital nomad, currently enjoying this privilege travelling
+              around the world, working freelance as a UX/UI/Interaction
+              expert/consultant (pick whichever title you find most appealing)
+              for an awesome USA based company. I want to find projects that
+              excite me, push me to the best of my ability, and have me look
+              back at the finished results with satisfaction.
+            </p>
+            <a href="about.html" class="button">Get to know me</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="team__tab">MEET THE TEAM</div>
+        <div class="team">
+          <span class="team__member">
+            <img src="img/footer/designer.jpeg" />
+            <span class="team__member-title">UX designer</span>
+          </span>
+          <span class="team__member">
+            <img src="img/footer/dev.jpg" />
+            <span class="team__member-title">UI developer</span>
+          </span>
+          <span class="team__member">
+            <img src="img/footer/writer.jpg" />
+            <span class="team__member-title">Creative writer</span>
+          </span>
+          <div class="contact">
+            <div class="contact-title">Contact</div>
+            <a class="contact__email" href="mailto:charlie.poiters@gmail.com"
+              ><i class="fa fa-envelope mr1"></i>charlie.poiters@gmail.com</a
+            >
+            <div>
+              <i class="fa fa-phone mr1"></i>+32 496 29 64 53 (please don't call
+              me, I'm a millenial)
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -3,7 +3,7 @@ a,
 button,
 ul,
 li {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 100%;
   margin: 0;
   padding: 0;
@@ -25,7 +25,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: #1B2620;
+  color: #1b2620;
   font-size: 18px;
 }
 
@@ -47,16 +47,16 @@ a {
 }
 
 .button {
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   cursor: pointer;
   font-weight: 700;
   border-radius: 5px;
   text-decoration: none;
   border: 0;
   display: inline-block;
-  background-color: #FEF9F8;
-  color: #1B2620;
-  border: 1px solid #1B2620;
+  background-color: #fef9f8;
+  color: #1b2620;
+  border: 1px solid #1b2620;
   text-align: center;
 }
 
@@ -65,7 +65,7 @@ a {
 }
 
 .button.-light:hover {
-  color: #1B2620;
+  color: #1b2620;
   background-color: #fbe6e2;
 }
 
@@ -79,8 +79,18 @@ a {
 }
 
 .button:hover {
-  background-color: #1B2620;
-  color: #FEF9F8;
+  background-color: #1b2620;
+  color: #fef9f8;
+}
+
+.company-header {
+  font-weight: bold;
+  color: #ffffffcc;
+  text-align: center;
+  padding: 1rem 0;
+  margin: 0 3rem;
+  font-size: 1.25rem;
+  border-bottom: 1px solid #ffffff54;
 }
 
 .container {
@@ -104,11 +114,11 @@ main.container {
 }
 
 main a:not(.button) {
-  color: #1B2620;
+  color: #1b2620;
 }
 
 main a:not(.button):hover {
-  color: #1B2620;
+  color: #1b2620;
   color: #3b5346;
 }
 
@@ -123,7 +133,7 @@ header {
   width: 100%;
   z-index: 1;
   font-weight: 200;
-  background: #1B2620;
+  background: #1b2620;
 }
 
 header .container {
@@ -162,7 +172,7 @@ header li:not(:last-child) {
 }
 
 header li a {
-  color: #FEF9F8;
+  color: #fef9f8;
   text-decoration: none;
   padding: 1rem;
   display: block;
@@ -179,9 +189,9 @@ header li a:focus, header li a.active {
 }
 
 .banner {
-  background-color: #1B2620;
-  color: #FEF9F8;
-  padding-top: 3rem;
+  background-color: #1b2620;
+  color: #fef9f8;
+  padding-top: 5rem;
   padding-bottom: 5rem;
   margin-bottom: 3rem;
 }
@@ -191,7 +201,7 @@ header li a:focus, header li a.active {
 }
 
 .banner h1 {
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 5rem;
   letter-spacing: 6px;
 }
@@ -259,7 +269,7 @@ header li a:focus, header li a.active {
 
 .title-tooltip {
   display: inline-block;
-  color: #7EBA19;
+  color: #7eba19;
 }
 
 .intro {
@@ -289,7 +299,7 @@ header li a:focus, header li a.active {
 }
 
 .cv__title {
-  border-bottom: 6px solid #FEF9F8;
+  border-bottom: 6px solid #fef9f8;
   padding-bottom: 1rem;
   font-weight: 400;
 }
@@ -334,7 +344,7 @@ header li a:focus, header li a.active {
 }
 
 .cv__skill ul li {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .cv__skill-title {
@@ -377,8 +387,8 @@ header li a:focus, header li a.active {
 }
 
 footer {
-  background-color: #1B2620;
-  color: #FEF9F8;
+  background-color: #1b2620;
+  color: #fef9f8;
   margin-top: 5rem;
   padding: 1rem 0;
   bottom: 0;
@@ -395,11 +405,11 @@ footer .team {
 }
 
 footer .team__tab {
-  background-color: #1B2620;
+  background-color: #1b2620;
   position: absolute;
   top: -3.75rem;
   padding: 1rem 1rem;
-  font-size: .875rem;
+  font-size: 0.875rem;
   line-height: 1rem;
   font-weight: 700;
   border-top-left-radius: 15px;
@@ -425,7 +435,7 @@ footer .team__member-title {
 }
 
 footer .contact {
-  border-left: 1px solid #6A707B;
+  border-left: 1px solid #6a707b;
   margin: 1rem;
   padding: 1rem;
   -ms-flex-item-align: center;
@@ -437,7 +447,7 @@ footer .contact__email {
   display: block;
   margin-bottom: 1rem;
   text-decoration: none;
-  color: #FEF9F8;
+  color: #fef9f8;
 }
 
 footer .contact__email:hover {
@@ -448,8 +458,8 @@ footer img {
   height: 6rem;
   width: 6rem;
   border-radius: 100%;
-  border: 5px solid #FEF9F8;
-  margin-bottom: .5rem;
+  border: 5px solid #fef9f8;
+  margin-bottom: 0.5rem;
 }
 
 footer .contact-title {
@@ -511,7 +521,7 @@ footer .contact-title {
   background: #7daf9247;
   border-radius: 5px;
   text-transform: uppercase;
-  font-size: .725rem;
+  font-size: 0.725rem;
   font-weight: 500;
 }
 
@@ -537,6 +547,6 @@ footer .contact-title {
 }
 
 .slick-arrow:before {
-  color: #365D90 !important;
+  color: #365d90 !important;
 }
 /*# sourceMappingURL=styling.css.map */

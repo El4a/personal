@@ -1,7 +1,7 @@
 //variables
-$color-primary: #1B2620;
+$color-primary: #1b2620;
 $color-secundary: #7daf9225;
-$color-accent: #FEF9F8;
+$color-accent: #fef9f8;
 $color-accent-green: #7daf92;
 
 body,
@@ -9,13 +9,13 @@ a,
 button,
 ul,
 li {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 100%;
   margin: 0;
   padding: 0;
   vertical-align: baseline;
   border: 0;
-    font-weight: 300;
+  font-weight: 300;
 }
 
 i {
@@ -48,7 +48,7 @@ a {
 }
 
 .button {
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   cursor: pointer;
   font-weight: 700;
   border-radius: 5px;
@@ -82,7 +82,16 @@ a {
     background-color: $color-primary;
     color: $color-accent;
   }
+}
 
+.company-header {
+  font-weight: bold;
+  color: #ffffffcc;
+  text-align: center;
+  padding: 1rem 0;
+  margin: 0 3rem;
+  font-size: 1.25rem;
+  border-bottom: 1px solid #ffffff54;
 }
 
 .container {
@@ -146,7 +155,6 @@ header {
 
   ul {
     list-style: none;
-
   }
 
   li {
@@ -156,7 +164,6 @@ header {
     &:not(:last-child) {
       margin-right: 3.5rem;
     }
-
 
     a {
       color: $color-accent;
@@ -181,7 +188,7 @@ header {
 .banner {
   background-color: $color-primary;
   color: $color-accent;
-  padding-top: 3rem;
+  padding-top: 5rem;
   padding-bottom: 5rem; //2 when button is visible
   margin-bottom: 3rem;
 
@@ -190,7 +197,7 @@ header {
   }
 
   h1 {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: "Yanone Kaffeesatz", sans-serif;
     font-size: 5rem;
     letter-spacing: 6px;
   }
@@ -208,8 +215,6 @@ header {
     margin-bottom: 3rem;
   }
 }
-
-
 
 .subtitle {
   font-size: 2.5rem;
@@ -247,7 +252,7 @@ header {
 
 .title-tooltip {
   display: inline-block;
-  color: #7EBA19;
+  color: #7eba19;
 }
 
 .intro {
@@ -256,23 +261,21 @@ header {
   width: 66%;
 }
 
-
-
 .about-me {
- &__meta {
-   font-size: 1rem;
- }
+  &__meta {
+    font-size: 1rem;
+  }
 
- &__bottom-line {
-   position: relative;
+  &__bottom-line {
+    position: relative;
 
-   img {
-     position: absolute;
-     transform: translateY(-15%);
-     margin-left: 1rem;
-     width: 160px;
-   }
- }
+    img {
+      position: absolute;
+      transform: translateY(-15%);
+      margin-left: 1rem;
+      width: 160px;
+    }
+  }
 }
 
 .cv {
@@ -305,14 +308,14 @@ header {
   &__skill {
     flex-basis: 20%;
 
-     ul {
-       list-style: none;
-       font-weight: 300;
+    ul {
+      list-style: none;
+      font-weight: 300;
 
-       li {
-         margin-bottom: .5rem;
-       }
-     }
+      li {
+        margin-bottom: 0.5rem;
+      }
+    }
   }
 
   &__skill-title {
@@ -337,10 +340,10 @@ header {
     margin-right: 1rem;
   }
 
-   &__timeline-item-wg {
-     font-weight: 300;
-     color: lighten($color-primary, 25%);
-   }
+  &__timeline-item-wg {
+    font-weight: 300;
+    color: lighten($color-primary, 25%);
+  }
 }
 
 .download-btn {
@@ -368,7 +371,7 @@ footer {
       position: absolute;
       top: -3.75rem;
       padding: 1rem 1rem;
-      font-size: .875rem;
+      font-size: 0.875rem;
       line-height: 1rem;
       font-weight: 700;
       border-top-left-radius: 15px;
@@ -388,7 +391,7 @@ footer {
   }
 
   .contact {
-    border-left: 1px solid #6A707B;
+    border-left: 1px solid #6a707b;
     margin: 1rem;
     padding: 1rem;
     align-self: center;
@@ -410,14 +413,13 @@ footer {
     width: 6rem;
     border-radius: 100%;
     border: 5px solid $color-accent;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
 
   .contact-title {
     margin-bottom: 1rem;
     font-weight: 700;
   }
-
 }
 
 .mb1 {
@@ -435,7 +437,6 @@ footer {
 .boxshadow {
   box-shadow: 10px 10px 14px -8px rgba(97, 91, 97, 1);
 }
-
 
 .projects {
   margin-top: 8rem;
@@ -456,18 +457,18 @@ footer {
     }
   }
 
-   &__tags {
-     margin-bottom: 2rem;
-   }
+  &__tags {
+    margin-bottom: 2rem;
+  }
 
-   &__tag {
-     padding: 0.25rem 0.5rem;
-     background: #7daf9247;
-     border-radius: 5px;
-     text-transform: uppercase;
-     font-size: .725rem;
-     font-weight: 500;
-   }
+  &__tag {
+    padding: 0.25rem 0.5rem;
+    background: #7daf9247;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 0.725rem;
+    font-weight: 500;
+  }
 
   &__ux-images {
     width: 45%;
@@ -489,11 +490,9 @@ footer {
   p {
     width: 100%;
   }
-
 }
-
 
 //sliding library styling overrules
 .slick-arrow:before {
-  color: #365D90 !important;
+  color: #365d90 !important;
 }
